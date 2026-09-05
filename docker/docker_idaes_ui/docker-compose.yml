@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  idaes-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: idaes_ui
+    ports:
+      - "8001:5173"
+    volumes:
+      - ./idaes-ui:/app/idaes-ui
+    command: ["/usr/local/bin/start.sh"]

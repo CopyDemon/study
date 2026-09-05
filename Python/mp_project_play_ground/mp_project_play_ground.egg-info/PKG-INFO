@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mp-project-play-ground
+Version: 0.1.0
+Summary: Materials Project API playground
+Requires-Python: >=3.8
+Requires-Dist: mpcontribs-client
+Requires-Dist: mp-api

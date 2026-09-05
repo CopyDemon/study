@@ -1,0 +1,28 @@
+{
+  "name": "pg-db",
+  "version": "1.0.0",
+  "description": "use for project db handle",
+  "main": "index.ts",
+  "scripts": {
+    "help": "node ./help.ts",
+    "test": "test",
+    "build-db": "ts-node -r tsconfig-paths/register ./build-db/index.ts"
+  },
+  "keywords": [
+    "pgdb",
+    "nodejs",
+    "docker"
+  ],
+  "author": "sheng",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10",
+    "tsconfig-paths": "^4.2.0"
+  }
+}

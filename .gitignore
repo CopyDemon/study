@@ -3,6 +3,9 @@ node_modules
 __pycache__
 build
 .env
+.env.*
+.env_*
+!.env.example
 .next/
 lib/
 bin/

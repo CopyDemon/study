@@ -1,0 +1,19 @@
+{
+  "name": "endpointtestserver",
+  "version": "1.0.0",
+  "description": "this is a endpoint test server use for send or receive request and testing request",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "npm run test"
+  },
+  "author": "Sheng",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  }
+}

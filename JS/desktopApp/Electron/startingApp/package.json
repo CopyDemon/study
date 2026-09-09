@@ -1,0 +1,16 @@
+{
+  "name": "sincere-database-direct-omxr0",
+  "productName": "sincere-database-direct-omxr0",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "shengpang",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "26.2.2"
+  }
+}

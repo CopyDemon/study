@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+__pycache__
+build
+.env
+.env.*
+*.env
+.env_*
+.next/
+lib/
+bin/
+
+# notebook
+.ipynb_checkpoints/
+

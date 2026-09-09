@@ -1,0 +1,30 @@
+version: '3.8'
+
+tasks:
+  default:
+    cmds:
+      - task: run_docker
+  
+  run_docker:
+    cmds:
+      - |
+        if ! docker image list --format'{{.Repository}}' | grep -q 'idaes_ui'
+        then
+          echo -e "\n idaes_ui image not found, starting to build  \n"
+          # build idaes_ui image
+          echo -e "\n idaes_ui not found, starting to build  \n"
+          docker build -t idaes_ui .
+
+          # run idaes_ui container
+          echo -e "\n idaes_ui build complete, starting container \n"
+          docker run -d --name idaes_ui idaes_ui tail -f /dev/null
+
+          echo -e "\n idaes_ui_container started \n"
+        else
+          # run idaes_ui container
+          echo -e "\n starting docker container \n"
+          docker run -d --name idaes_ui idaes_ui tail -f /dev/null
+
+          echo -e "\n idaes_ui_container started \n"
+        fi
+    silent: true

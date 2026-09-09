@@ -1,0 +1,21 @@
+{
+  "name": "study-backend",
+  "version": "1.0.0",
+  "description": "presonal backend study repo",
+  "keywords": [
+    "backedn",
+    "JS",
+    "router",
+    "etc"
+  ],
+  "license": "ISC",
+  "author": "Sheng",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

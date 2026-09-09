@@ -1,0 +1,12 @@
+version: '3.8'
+
+tasks:
+  default:
+    cmds:
+      - task: build_docker_example_image
+    silent: true
+
+  build_docker_example_image:
+    cmds:
+      - docker build -t docker-example .
+    silent: true

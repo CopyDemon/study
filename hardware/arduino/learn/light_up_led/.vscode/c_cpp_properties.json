@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "Arduino",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/Users/shengpang/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
+        "/Users/shengpang/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard"
+      ],
+      "defines": [
+        "ARDUINO=10813",
+        "ARDUINO_AVR_UNO",
+        "F_CPU=16000000L",
+        "ARDUINO_ARCH_AVR"
+      ],
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-clang-x64"
+    }
+  ],
+  "version": 4
+}

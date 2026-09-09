@@ -1,0 +1,22 @@
+version: '3.8'
+
+tasks:
+  # only one task to stop idaes_ui_container
+  default:
+    cmds:
+      - echo -e "\n stopping idaes_ui_container \n"
+      - |
+        # check if idaes_ui_container is running
+        # if not running, exit
+        # if running, stop and remove idaes_ui_container
+
+        if ! docker ps -a --format'{{.Names}}' | grep -q 'idaes_ui_container'
+        then
+          echo -e "\n idaes_ui_container not found and now exiting \n"
+          exit 0
+        else
+          docker stop idaes_ui_container
+          echo -e "\n removing idaes_ui_container \n"
+          docker rm idaes_ui_container
+        fi
+      
